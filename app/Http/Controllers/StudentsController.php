@@ -15,7 +15,8 @@ class StudentsController extends Controller
 
     public function add()
     {
-    	return view('add');
+        return view('add');
+        //
     }
 
     public function searchStudent(){
