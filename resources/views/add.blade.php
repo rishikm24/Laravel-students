@@ -11,19 +11,19 @@
                 <form method="POST" action="/student">
                     <div class="form-group">
                         <label for="first_name">First Name:</label>
-                        <input type="first_name" class="form-control" id="first_name" placeholder="Enter first name" name="first_name">
+                        <input type="text" class="form-control" id="first_name" placeholder="Enter first name" name="first_name">
                         @if ($errors->has('first_name'))
                         <span class="text-danger">{{ $errors->first('first_name') }}</span>
                         @endif
                         <label for="phone">Phone:</label>
-                        <input type="phone" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
+                        <input type="number" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
                         @if ($errors->has('phone'))
                         <span class="text-danger">{{ $errors->first('phone') }}</span>
                         @endif
                     </div>
                     <div class="form-group">
                         <label for="last_name">Last Name:</label>
-                        <input type="last_name" class="form-control" id="last_name" placeholder="Enter last name" name="last_name">
+                        <input type="text" class="form-control" id="last_name" placeholder="Enter last name" name="last_name">
                         @if ($errors->has('last_name'))
                         <span class="text-danger">{{ $errors->first('last_name') }}</span>
                         @endif
